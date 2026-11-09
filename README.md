@@ -35,15 +35,15 @@ Install Node.js LTS and Expo Go on an Android phone, or use an Android emulator.
 3. Open the terminal in that folder.
 4. Install packages:
 
-   ```powershell
-   npm.cmd install
-   ```
+```powershell
+npm.cmd install
+```
 
 5. Start Expo:
 
-   ```powershell
-   npx.cmd expo start
-   ```
+```powershell
+npx.cmd expo start
+```
 
 6. Scan the QR code using Expo Go, or press `a` to open an Android emulator.
 
@@ -59,11 +59,12 @@ Then restart Expo:
 npx.cmd expo start -c
 ```
 
-## Local database
+## Local Database
 
 The app creates `laplend.db` on the device on first launch. It creates two tables:
 
 ### laptops
+
 - id
 - laptopName
 - brand
@@ -76,6 +77,7 @@ The app creates `laplend.db` on the device on first launch. It creates two table
 - description
 
 ### rentals
+
 - id
 - laptopId
 - borrowerName
@@ -87,7 +89,7 @@ The app creates `laplend.db` on the device on first launch. It creates two table
 
 The 12 sample laptop records in `src/data/seedData.js` are inserted only when the laptop table is empty. All later changes are stored in SQLite.
 
-## Project structure
+## Project Structure
 
 ```text
 LapLend/
